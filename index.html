@@ -1,86 +1,107 @@
-<!--2026/05/23-->
-
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lwande Dana | WDD 130</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Lwande Dana</title>
 
     <meta name="description"
-      content="WDD130 home page for Lwande Dana, a software development student learning HTML and CSS.">
+        content="WDD 131 – Dynamic Web Fundamentals, Lwande Dana, HTML, CSS, JavaScript, Software Development">
 
     <meta name="author" content="Lwande Dana">
 
-    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/getdates.js" defer></script>
+
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
 
-            <!-- NEW LINKS -->
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
+        <span id="course-title">
+            WDD 131 – Dynamic Web Fundamentals
+        </span>
+
+        <nav>
+
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                target="_blank">
+                Scripture
+            </a>
+
+            <a href="#">Final Project</a>
+
         </nav>
+
     </header>
 
     <main>
-        <h1>Lwande Dana | WDD 130</h1>
 
-        <img src="images/lwandedana-profile.jpg" alt="Profile picture of Lwande Dana">
+        <h1>Lwande Dana</h1>
 
-        <p>
-            I am a software development student from South Africa interested in
-            web development, AI, and entrepreneurship. I enjoy learning new
-            technologies, building websites, and improving my coding skills.
-            My goal is to become a professional full-stack developer and create
-            software solutions that help businesses and communities.
-        </p>
+        <section class="card">
 
-        <!-- TEMPLE LIST -->
-        <ul class="box">
-            <li>
-                <a href="https://newsroom.churchofjesuschrist.org/article/cape-town-south-africa-temple"
-                  target="_blank">
-                    Cape Town South Africa Temple
-                </a>
-            </li>
+            <h2>About Me</h2>
 
-            <li>
-                <a href="https://newsroom.churchofjesuschrist.org/article/johannesburg-south-africa-temple"
-                  target="_blank">
-                    Johannesburg South Africa Temple
-                </a>
-            </li>
+            <img src="styles/script/images/lwandephoto.jpg" alt="Profile Photo">
 
-            <li>
-                <a href="https://newsroom.churchofjesuschrist.org/article/salt-lake-temple"
-                  target="_blank">
-                    Salt Lake Temple
-                </a>
-            </li>
-        </ul>
+            <p>
+
+                Hello! My name is Lwande Dana. I am currently studying Software Development through BYU–Idaho.
+                I enjoy building websites, learning JavaScript, Python, and Artificial Intelligence. My goal is to
+                become a Full Stack Developer and AI Engineer while creating technology that solves real-world problems.
+
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>South Africa</h2>
+
+            <img src="styles/script/images/south-african.png" alt="South Africa">
+
+            <p>
+
+                South Africa is known for its beautiful landscapes, wildlife, diverse cultures, and eleven official
+                languages. It is home to Table Mountain, Kruger National Park, and one of the strongest economies in
+                Africa.
+
+            </p>
+
+        </section>
+
     </main>
 
-    <aside class="box">
-        <h2>South Africa</h2>
-
-        <img src="images/southafrica.png" alt="Flag of South Africa">
+    <footer>
 
         <p>
-            South Africa is a diverse country known for its rich culture,
-            wildlife, and natural beauty.
-        </p>
-    </aside>
 
-    <footer>
-        <p>©2026 🌴 Lwande Dana 🌴 South Africa</p>
+            &copy;
+            <span id="currentyear"></span>
+
+            | Lwande Dana | South Africa
+
+        </p>
+
+        <p id="lastModified"></p>
+
     </footer>
 
 </body>
